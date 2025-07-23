@@ -40,7 +40,7 @@
       </nav>
     </div>
   </div>
-  <div class="toptopbar-right">
+  <div class="toptopbar-right" tabindex="0">
     <img src="<?= htmlspecialchars($profile_img) ?>" alt="Profile" class="toptopbar-profile-img">
     <div class="toptopbar-profile-meta">
       <div class="toptopbar-profile-name"><?= htmlspecialchars($user_name) ?></div>
@@ -51,5 +51,10 @@
         <?php endif; ?>
       </div>
     </div>
+    <span class="toptopbar-profile-caret">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+        <polygon points="5,8 10,13 15,8" fill="#fff"/>
+      </svg>
+    </span>
   </div>
 </div>

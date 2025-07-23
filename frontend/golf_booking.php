@@ -1,7 +1,14 @@
 <?php
-$topbar_title = 'Admin';
-$page_title = 'Profile';
-$page_subtext = 'This page allows you to view and edit your profile information.';
+$page_title = 'Golf Booking';
+$page_subtext = 'Book your golf session here.';
+$current_page = 'Facility Booking'; // This makes "Facility Booking" active in the topbar
+
+// Breadcrumbs for toptopbar
+$breadcrumbs = [
+    ['title' => 'Home', 'url' => 'index.php'],
+    ['title' => 'Facility Booking', 'url' => '#'],
+    ['title' => 'Golf Booking', 'url' => 'golf_booking.php']
+];
 ?>
 
 <!DOCTYPE html>

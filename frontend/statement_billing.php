@@ -1,7 +1,13 @@
 <?php
-$topbar_title = 'Admin';
-$page_title = 'Profile';
-$page_subtext = 'This page allows you to view and edit your profile information.';
+$page_title = 'Statement Billing';
+$page_subtext = 'View and manage your billing statements.';
+$current_page = 'Statement Billing'; // This makes "Statement Billing" active in the topbar
+
+// Breadcrumbs for toptopbar
+$breadcrumbs = [
+    ['title' => 'Home', 'url' => 'index.php'],
+    ['title' => 'Statement Billing', 'url' => 'statement_billing.php']
+];
 ?>
 
 <!DOCTYPE html>

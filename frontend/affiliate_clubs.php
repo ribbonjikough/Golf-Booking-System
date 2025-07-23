@@ -1,7 +1,13 @@
 <?php
-$topbar_title = 'Admin';
-$page_title = 'Profile';
-$page_subtext = 'This page allows you to view and edit your profile information.';
+$page_title = 'Affiliate Club Apps';
+$page_subtext = 'Manage and view affiliate club applications.';
+$current_page = 'Affiliate Club Apps'; // This makes "Affiliate Club Apps" active in the topbar
+
+// Breadcrumbs for toptopbar
+$breadcrumbs = [
+    ['title' => 'Home', 'url' => 'index.php'],
+    ['title' => 'Affiliate Club Apps', 'url' => 'affiliate_clubs.php']
+];
 ?>
 
 <!DOCTYPE html>
