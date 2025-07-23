@@ -21,7 +21,9 @@
 ?>
 <div class="toptopbar">
   <div class="toptopbar-left">
+    <a href link="index.php">
     <img src="assets/img/company-logo.png" alt="Company Logo" class="toptopbar-logo">
+    </a>
     <div class="toptopbar-meta">
       <div class="toptopbar-title"><?= isset($page_title) ? htmlspecialchars($page_title) : 'Page Title' ?></div>
       <nav class="toptopbar-breadcrumbs">

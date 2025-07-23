@@ -1,3 +1,13 @@
+<?php
+
+?>
+
+<!-- <?php
+$topbar_title = 'Admin';
+$page_title = 'Profile';
+$page_subtext = 'This page allows you to view and edit your profile information.';
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
