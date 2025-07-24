@@ -12,8 +12,8 @@
     <div class="login-center-frame">
         <img src="assets/img/company-logo.png" alt="cllsystems" class="login-logo">
         <div class="login-question">Are you a Guest or Member?</div>
-        <a href="member_login.php" class="login-btn login-btn-member">Yes, I am a Member</a>
-        <a href="guest_login.php" class="login-btn login-btn-guest">No, I am not a Member</a>
+        <a href="member_login.php" class="login-btn login-btn-next">Yes, I am a Member</a>
+        <a href="visitor_login.php" class="login-btn login-btn-guest">No, I am not a Member</a>
     </div>
 </body>
 </html>

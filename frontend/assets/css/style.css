@@ -78,14 +78,14 @@ body.login-bg {
   transition: background 0.18s, color 0.18s;
 }
 
-.login-btn-member {
+.login-btn-next {
   background: #BFA32B;
   color: #fff;
   border: none;
 }
 
-.login-btn-member:hover,
-.login-btn-member:focus {
+.login-btn-next:hover,
+.login-btn-next:focus {
   background: #a68e24;
   color: #fff;
 }
@@ -111,6 +111,105 @@ body.login-bg {
     width: 90px;
   }
 }
+/* Forgot Password & Register Links */
+.login-link-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.login-link {
+  color: #2363d1;
+  font-size: 1.05rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s;
+}
+
+.login-link:hover,
+.login-link:focus {
+  color: #145D9A;
+  text-decoration: underline;
+}
+
+/* Checkbox styling */
+.login-checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.login-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #2363d1;
+  margin-right: 8px;
+}
+
+.login-checkbox-label {
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 500;
+  user-select: none;
+}
+
+.login-title {
+  font-size: 1.28rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.login-form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.login-form-label {
+  font-size: 1.08rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.login-form-input {
+  width: 95%;
+  padding: 10px 12px;
+  font-size: 1.08rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #fafbfc;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.login-form-input:focus {
+  border-color: #2363d1;
+  outline: none;
+}
+
+.login-back-btn {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  text-decoration: none;
+}
+.login-back-btn svg polygon {
+  transition: fill 0.18s;
+}
+
 
 .main-wrapper {
   min-height: 100vh;
