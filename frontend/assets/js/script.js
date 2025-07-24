@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="dropdown-content">
       <a href="profile.php" class="profile-link">Profile</a>
       <a href="settings.php" class="profile-link">Settings</a>
-      <a href="logout.php" class="profile-link logout-link">Logout</a>
+      <a href="../backend/logout.php" class="profile-link logout-link">Logout</a>
     </div>
   `;
   dropdown.style.display = 'none';
@@ -99,8 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ...existing code...
-
   // Card Payment Opacity Logic
   const feeElem = document.querySelector('.card-balance-fee');
   const cardPayment = document.querySelector('.card-payment');
@@ -116,3 +114,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('clubFilterForm');
+        const selects = form.querySelectorAll('select');
+        const search = document.getElementById('searchInput');
+
+        selects.forEach(sel => {
+            sel.addEventListener('change', () => form.submit());
+        });
+        search.addEventListener('input', () => {
+            // Debounce search input
+            clearTimeout(window.searchTimeout);
+            window.searchTimeout = setTimeout(() => {
+                form.submit();
+            }, 300);
+        });
+    });
