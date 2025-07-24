@@ -171,6 +171,7 @@ body.login-bg {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 4px;
   margin-bottom: 18px;
   background:#fafafa;
   border-radius:8px;
@@ -184,14 +185,14 @@ body.login-bg {
 }
 
 .login-form-input {
-  width: 95%;
+  width: 94%;
   padding: 10px 12px;
   font-size: 1.08rem;
   border: 1px solid #bbb;
   border-radius: 4px;
   background: #fafbfc;
   color: #222;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .login-form-input:focus {
@@ -245,11 +246,12 @@ body.login-bg {
 
 /* OTP input row container for positioning */
 .login-form-otp-row {
-  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   margin-bottom: 18px;
+  gap: 8px;
 }
-
 /* Verify button styling */
 .login-btn-verify {
   width: 100%;

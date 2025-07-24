@@ -21,8 +21,6 @@
           <div class="login-form-row">
             <label for="email" class="login-form-label">Email/ Username</label>
             <input type="text" id="email" name="email" class="login-form-input" placeholder="Insert Email/ Username" autocomplete="username">
-          </div>
-          <div class="login-form-row">
             <label for="password" class="login-form-label">Password</label>
             <input type="password" id="password" name="password" class="login-form-input" placeholder="**********" autocomplete="current-password">
           </div>
@@ -38,4 +36,5 @@
         </form>
     </div>
 </body>
+<script src="assets/js/script.js"></script>
 </html>

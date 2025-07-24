@@ -69,3 +69,32 @@ document.getElementById('otp').addEventListener('input', function() {
     btn.classList.remove('active');
   }
 });
+
+// Phase 1: Enable Verify button when OTP is entered
+document.addEventListener('DOMContentLoaded', function () {
+  var otpInput = document.getElementById('otp');
+  var verifyBtn = document.getElementById('verifyBtn');
+  if (otpInput && verifyBtn) {
+    otpInput.addEventListener('input', function() {
+      if (this.value.trim()) {
+        verifyBtn.disabled = false;
+        verifyBtn.classList.add('active');
+      } else {
+        verifyBtn.disabled = true;
+        verifyBtn.classList.remove('active');
+      }
+    });
+    verifyBtn.addEventListener('click', function() {
+      // Simulate phase change for demo
+      window.location.href = 'register_visitor.php?phase=2';
+    });
+  }
+  // Phase 2: On successful registration, go to phase 3
+  var registerForm = document.getElementById('registerPhaseForm');
+  if (registerForm) {
+    registerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = 'register_visitor.php?phase=3';
+    });
+  }
+});

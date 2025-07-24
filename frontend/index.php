@@ -33,4 +33,5 @@ $page_subtext = 'This page allows you to view and edit your profile information.
         </div>
     </div>
 </body>
+<script src="assets/js/script.js"></script>
 </html>

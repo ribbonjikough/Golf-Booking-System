@@ -16,4 +16,5 @@
         <a href="visitor_login.php" class="login-btn login-btn-guest">No, I am not a Member</a>
     </div>
 </body>
+<script src="assets/js/script.js"></script>
 </html>
