@@ -90,11 +90,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   // Phase 2: On successful registration, go to phase 3
-  var registerForm = document.getElementById('registerPhaseForm');
-  if (registerForm) {
-    registerForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+  var signUpBtn = document.getElementById('signUpBtn');
+  if (signUpBtn) {
+    signUpBtn.addEventListener('click', function(e) {
       window.location.href = 'register_visitor.php?phase=3';
     });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ...existing code...
+
+  // Card Payment Opacity Logic
+  const feeElem = document.querySelector('.card-balance-fee');
+  const cardPayment = document.querySelector('.card-payment');
+  if (feeElem && cardPayment) {
+    // Extract numeric value from text like "RM0.00"
+    const feeValue = parseFloat(feeElem.textContent.replace(/[^\d.]/g, ''));
+    if (feeValue === 0) {
+      cardPayment.style.opacity = '0.5';
+      cardPayment.style.pointerEvents = 'none';
+    } else {
+      cardPayment.style.opacity = '1';
+      cardPayment.style.pointerEvents = '';
+    }
   }
 });

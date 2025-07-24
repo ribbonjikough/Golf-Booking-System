@@ -62,11 +62,11 @@ if (isset($_GET['phase'])) {
               <label for="reg_confirm" class="login-form-label">Confirm Password</label>
               <input type="password" id="reg_confirm" name="reg_confirm" class="login-form-input" placeholder="**********" autocomplete="new-password">
             </div>
-            <button type="submit" class="login-btn login-btn-next">Sign Up</button>
+            <button type="button" class="login-btn login-btn-next">Sign Up</button>
           </form>
         <?php elseif ($phase === 3): ?>
           <div class="login-title">Visitor Registration Complete</div>
-          <button onclick="window.location.href='login.php'" class="login-btn login-btn-next" style="margin-top:32px;">Head to Login Page again</button>
+          <button onclick="window.location.href='login.php'" class="login-btn login-btn-next" style="margin-top:32px;">Head to Login Page</button>
         <?php endif; ?>
     </div>
 </body>
