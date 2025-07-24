@@ -17,7 +17,7 @@
         </a>
         <img src="assets/img/company-logo.png" alt="cllsystems" class="login-logo">
         <div class="login-title">Visitor Login</div>
-        <form style="width: 100%;">
+        <form class="login-form">
           <div class="login-form-row">
             <label for="email" class="login-form-label">Email/ Username</label>
             <input type="text" id="email" name="email" class="login-form-input" placeholder="Insert Email/ Username" autocomplete="username">
@@ -30,7 +30,7 @@
             <input type="checkbox" id="remember" class="login-checkbox" />
             <label for="remember" class="login-checkbox-label">Remember Me?</label>
           </div>
-          <button type="submit" class="login-btn login-btn-next">Login</button>
+          <a href="index.php" class="login-btn login-btn-next">Login</a>
           <div class="login-link-row">
             <a href="forgot_password.php" class="login-link">Forgot Password?</a>
             <a href="register_visitor.php" class="login-link">Register</a>

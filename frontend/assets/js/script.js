@@ -52,3 +52,20 @@ document.addEventListener('DOMContentLoaded', function () {
     e.stopPropagation();
   });
 });
+
+// Enable Send OTP when email is filled
+document.getElementById('email').addEventListener('input', function() {
+  document.getElementById('sendOtpBtn').disabled = !this.value.trim();
+});
+
+// Enable Verify when OTP is filled
+document.getElementById('otp').addEventListener('input', function() {
+  const btn = document.getElementById('verifyBtn');
+  if (this.value.trim()) {
+    btn.disabled = false;
+    btn.classList.add('active');
+  } else {
+    btn.disabled = true;
+    btn.classList.remove('active');
+  }
+});

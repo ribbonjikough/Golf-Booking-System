@@ -30,7 +30,7 @@
             <input type="checkbox" id="remember" class="login-checkbox" />
             <label for="remember" class="login-checkbox-label">Remember Me?</label>
           </div>
-          <button type="submit" class="login-btn login-btn-next">Login</button>
+          <a href="index.php" class="login-btn login-btn-next">Login</a>
           <div class="login-link-row">
             <a href="forgot_password.php" class="login-link">Forgot Password?</a>
             <a href="register_member.php" class="login-link">Register</a>
