@@ -17,6 +17,7 @@
   $user_name = isset($user_name) ? $user_name : 'John Doe';
   $user_role = isset($user_role) ? $user_role : 'Member';
   $membership_level = isset($membership_level) ? $membership_level : 'Gold';
+  $membership_class = strtolower($membership_level); // gold, platinum, silver, bronze
   $profile_img = isset($profile_img) ? $profile_img : 'assets/img/pfp.png';
 ?>
 <div class="toptopbar">
@@ -47,7 +48,9 @@
       <div class="toptopbar-profile-role">
         <?= htmlspecialchars($user_role) ?>
         <?php if (strtolower($user_role) === 'member'): ?>
-          <span class="toptopbar-membership">(<?= htmlspecialchars($membership_level) ?>)</span>
+          <span class="toptopbar-membership <?= $membership_class ?>">
+            <?= htmlspecialchars($membership_level) ?>
+          </span>
         <?php endif; ?>
       </div>
     </div>
