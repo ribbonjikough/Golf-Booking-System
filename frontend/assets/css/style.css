@@ -503,6 +503,45 @@ body.login-bg {
     font-size: 0.92rem;
   }
 }
+/* Profile Dropdown for TopTopBar */
+.toptopbar-right {
+  position: relative;
+}
+.profile-dropdown-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(21,114,185,.10);
+  min-width: 170px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.profile-dropdown-list.show {
+  display: block;
+}
+.profile-dropdown-link {
+  display: block;
+  padding: 10px 20px;
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.15s, color 0.15s;
+}
+.profile-dropdown-link:hover,
+.profile-dropdown-link:focus {
+  background: #f4f8fb;
+  color: #1572b9;
+}
+.profile-dropdown-link.logout-link {
+  color: #ea5455;
+  font-weight: bold;
+}
+
+
 /* Main Topbar Styles */
 .main-topbar {
   width: 100%;

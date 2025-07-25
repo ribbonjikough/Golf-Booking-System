@@ -40,7 +40,7 @@
       </nav>
     </div>
   </div>
-  <div class="toptopbar-right" tabindex="0">
+  <div class="toptopbar-right" id="toptopbarRight" tabindex="0">
     <img src="<?= htmlspecialchars($profile_img) ?>" alt="Profile" class="toptopbar-profile-img">
     <div class="toptopbar-profile-meta">
       <div class="toptopbar-profile-name"><?= htmlspecialchars($user_name) ?></div>
@@ -56,5 +56,10 @@
         <polygon points="5,8 10,13 15,8" fill="#fff"/>
       </svg>
     </span>
+    <div id="profileDropdown" class="profile-dropdown-list">
+      <a href="settings.php" class="profile-dropdown-link">Settings</a>
+      <a href="profile.php" class="profile-dropdown-link">Profile</a>
+      <a href="../backend/logout.php" class="profile-dropdown-link logout-link">Logout</a>
+    </div>
   </div>
 </div>
