@@ -49,7 +49,7 @@
         <?= htmlspecialchars($user_role) ?>
         <?php if (strtolower($user_role) === 'member'): ?>
           <span class="toptopbar-membership <?= $membership_class ?>">
-            <?= htmlspecialchars($membership_level) ?>
+            (<?= htmlspecialchars($membership_level) ?>)
           </span>
         <?php endif; ?>
       </div>

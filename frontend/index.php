@@ -54,7 +54,7 @@ $page_subtext = 'This page allows you to view and edit your profile information.
                         <div class="dashboard-summary-label">Upcoming Bookings</div>
                     </div>
                     <div class="dashboard-summary-card">
-                        <div class="dashboard-summary-value">RM 170.00</div>
+                        <div class="dashboard-summary-value card-balance-fee">RM 170.00</div>
                         <div class="dashboard-summary-label">Outstanding Balance</div>
                     </div>
                     <div class="dashboard-summary-card">
@@ -64,7 +64,7 @@ $page_subtext = 'This page allows you to view and edit your profile information.
                     <div class="dashboard-summary-card">
                         <div class="dashboard-summary-value">
                             Active
-                            <span class="toptopbar-membership gold">Gold</span>
+                            <span class="toptopbar-membership gold">(<?= htmlspecialchars($membership_level) ?>)</span>
                         </div>
                         <div class="dashboard-summary-label">Membership Status</div>
                     </div>
