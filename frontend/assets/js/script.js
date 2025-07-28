@@ -1,4 +1,4 @@
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var right = document.getElementById('toptopbarRight');
     var dropdown = document.getElementById('profileDropdown');
     if (right && dropdown) {
@@ -32,8 +32,22 @@ document.getElementById('otp').addEventListener('input', function() {
   }
 });
 
-// Phase 1: Enable Verify button when OTP is entered
 document.addEventListener('DOMContentLoaded', function () {
+  // Phase state
+  let phase = 1;
+
+  function showPhase(n) {
+    for (let i = 1; i <= 3; i++) {
+      const section = document.getElementById('phase' + i);
+      if (section) section.style.display = (i === n) ? '' : 'none';
+    }
+    phase = n;
+  }
+
+  // Initial phase
+  showPhase(1);
+
+  // Enable Verify button when OTP is entered
   var otpInput = document.getElementById('otp');
   var verifyBtn = document.getElementById('verifyBtn');
   if (otpInput && verifyBtn) {
@@ -47,15 +61,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
     verifyBtn.addEventListener('click', function() {
-      // Simulate phase change for demo
-      window.location.href = 'register_visitor.php?phase=2';
+      showPhase(2); // Move to phase 2
     });
   }
+
   // Phase 2: On successful registration, go to phase 3
   var signUpBtn = document.getElementById('signUpBtn');
   if (signUpBtn) {
     signUpBtn.addEventListener('click', function(e) {
-      window.location.href = 'register_visitor.php?phase=3';
+      showPhase(3); // Move to phase 3
     });
   }
 });

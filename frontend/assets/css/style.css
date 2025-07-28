@@ -222,10 +222,10 @@ body.login-bg {
 }
 /* Send OTP button inside email input row */
 .login-send-otp {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+  position: static;
+  right: auto;
+  top: auto;
+  transform: none;
   background: #BFA32B;
   color: #fff;
   border: none;
@@ -236,8 +236,9 @@ body.login-bg {
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
   z-index: 2;
+  /* Optional: add min-width for consistency */
+  min-width: 110px;
 }
-
 .login-send-otp:disabled {
   background: #e0d7a7;
   color: #b3a369;
@@ -248,10 +249,13 @@ body.login-bg {
 .login-form-otp-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 18px;
   gap: 8px;
+  position: relative; /* can be removed if not needed */
 }
+
 /* Verify button styling */
 .login-btn-verify {
   width: 100%;

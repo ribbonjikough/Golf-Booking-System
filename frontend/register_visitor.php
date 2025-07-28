@@ -22,7 +22,9 @@ if (isset($_GET['phase'])) {
           </svg>
         </a>
         <img src="assets/img/company-logo.png" alt="cllsystems" class="login-logo">
-        <?php if ($phase === 1): ?>
+
+        <!-- Phase 1 -->
+        <div class="phase-section" id="phase1">
           <div class="login-title">Email OTP</div>
           <form class="login-form" id="otpPhaseForm">
             <div class="login-form-row">
@@ -35,7 +37,10 @@ if (isset($_GET['phase'])) {
             </div>
             <button type="button" class="login-btn-verify" id="verifyBtn" disabled>Verify</button>
           </form>
-        <?php elseif ($phase === 2): ?>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-section" id="phase2" style="display:none;">
           <div class="login-title">Visitor Registration</div>
           <form class="login-form" id="registerPhaseForm">
             <div class="login-form-row">
@@ -62,12 +67,15 @@ if (isset($_GET['phase'])) {
               <label for="reg_confirm" class="login-form-label">Confirm Password</label>
               <input type="password" id="reg_confirm" name="reg_confirm" class="login-form-input" placeholder="**********" autocomplete="new-password">
             </div>
-            <button type="button" class="login-btn login-btn-next">Sign Up</button>
+            <button type="button" class="login-btn login-btn-next" id="signUpBtn">Sign Up</button>
           </form>
-        <?php elseif ($phase === 3): ?>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-section" id="phase3" style="display:none;">
           <div class="login-title">Visitor Registration Complete</div>
-          <button onclick="window.location.href='login.php'" class="login-btn login-btn-next" style="margin-top:32px;">Head to Login Page</button>
-        <?php endif; ?>
+          <button onclick="window.location.href='visitor_login.php'" class="login-btn login-btn-next" style="margin-top:32px;">Head to Login Page</button>
+        </div>
     </div>
 </body>
 <script src="assets/js/script.js"></script>
