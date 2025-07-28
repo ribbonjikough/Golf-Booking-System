@@ -77,10 +77,10 @@ $breadcrumbs = [
                         <h3>Book Tee Time</h3>
                         <form id="bookingForm">
                             <label for="playerName">Player Name:</label>
-                            <input type="text" id="playerName" required>
+                            <input type="text" id="playerName" >
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" >
 
                             <label for="selectedSlot">Selected Date:</label>
                             <input type="text" id="selectedSlot" readonly>
