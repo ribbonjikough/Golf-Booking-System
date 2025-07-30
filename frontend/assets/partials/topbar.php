@@ -8,7 +8,8 @@ $pages = [
     'Home' => 'index.php',
     'Facility Booking' => '#',
     'Statement Billing' => 'statement_billing.php',
-    'Affiliate Club Apps' => 'affiliate_clubs.php'
+    'Affiliate Club Apps' => 'affiliate_clubs.php',
+    'Calendar' => 'calendar_user.php'
 ];
 $facility_sports = [
     'Golf' => 'golf_booking.php',
